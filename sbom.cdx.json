@@ -1,0 +1,382 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f8da28a0-2977-59fa-ad4d-d7422ce4b310",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T15:51:12Z",
+    "component": {
+      "type": "application",
+      "name": "PROTOCOL_V2",
+      "version": "ce53c4a8c862",
+      "bom-ref": "pkg:generic/anticloud/PROTOCOL_V2@ce53c4a8c862",
+      "purl": "pkg:generic/anticloud/PROTOCOL_V2@ce53c4a8c862",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "ce53c4a8c8620125063168620eba0a8a92854eb8"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/aave/protocol-v2"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "axios-curlirize",
+      "version": "^1.3.7",
+      "purl": "pkg:npm/axios-curlirize@^1.3.7",
+      "bom-ref": "npm/axios-curlirize@^1.3.7"
+    },
+    {
+      "type": "library",
+      "name": "tmp-promise",
+      "version": "^3.0.2",
+      "purl": "pkg:npm/tmp-promise@^3.0.2",
+      "bom-ref": "npm/tmp-promise@^3.0.2"
+    },
+    {
+      "type": "library",
+      "name": "@nomiclabs/buidler",
+      "version": "^1.4.7",
+      "purl": "pkg:npm/@nomiclabs/buidler@^1.4.7",
+      "bom-ref": "npm/@nomiclabs/buidler@^1.4.7"
+    },
+    {
+      "type": "library",
+      "name": "@nomiclabs/buidler-ethers",
+      "version": "2.0.0",
+      "purl": "pkg:npm/@nomiclabs/buidler-ethers@2.0.0",
+      "bom-ref": "npm/@nomiclabs/buidler-ethers@2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@nomiclabs/buidler-etherscan",
+      "version": "^2.1.0",
+      "purl": "pkg:npm/@nomiclabs/buidler-etherscan@^2.1.0",
+      "bom-ref": "npm/@nomiclabs/buidler-etherscan@^2.1.0"
+    },
+    {
+      "type": "library",
+      "name": "@nomiclabs/buidler-waffle",
+      "version": "2.0.0",
+      "purl": "pkg:npm/@nomiclabs/buidler-waffle@2.0.0",
+      "bom-ref": "npm/@nomiclabs/buidler-waffle@2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@nomiclabs/hardhat-ethers",
+      "version": "^2.0.0",
+      "purl": "pkg:npm/@nomiclabs/hardhat-ethers@^2.0.0",
+      "bom-ref": "npm/@nomiclabs/hardhat-ethers@^2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@nomiclabs/hardhat-etherscan",
+      "version": "^3.1.4",
+      "purl": "pkg:npm/@nomiclabs/hardhat-etherscan@^3.1.4",
+      "bom-ref": "npm/@nomiclabs/hardhat-etherscan@^3.1.4"
+    },
+    {
+      "type": "library",
+      "name": "@nomiclabs/hardhat-waffle",
+      "version": "^2.0.0",
+      "purl": "pkg:npm/@nomiclabs/hardhat-waffle@^2.0.0",
+      "bom-ref": "npm/@nomiclabs/hardhat-waffle@^2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@openzeppelin/contracts",
+      "version": "3.1.0",
+      "purl": "pkg:npm/@openzeppelin/contracts@3.1.0",
+      "bom-ref": "npm/@openzeppelin/contracts@3.1.0"
+    },
+    {
+      "type": "library",
+      "name": "@tenderly/hardhat-tenderly",
+      "version": "1.1.0-beta.5",
+      "purl": "pkg:npm/@tenderly/hardhat-tenderly@1.1.0-beta.5",
+      "bom-ref": "npm/@tenderly/hardhat-tenderly@1.1.0-beta.5"
+    },
+    {
+      "type": "library",
+      "name": "@typechain/ethers-v4",
+      "version": "1.0.0",
+      "purl": "pkg:npm/@typechain/ethers-v4@1.0.0",
+      "bom-ref": "npm/@typechain/ethers-v4@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@typechain/ethers-v5",
+      "version": "^2.0.0",
+      "purl": "pkg:npm/@typechain/ethers-v5@^2.0.0",
+      "bom-ref": "npm/@typechain/ethers-v5@^2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@typechain/truffle-v4",
+      "version": "2.0.2",
+      "purl": "pkg:npm/@typechain/truffle-v4@2.0.2",
+      "bom-ref": "npm/@typechain/truffle-v4@2.0.2"
+    },
+    {
+      "type": "library",
+      "name": "@typechain/truffle-v5",
+      "version": "2.0.2",
+      "purl": "pkg:npm/@typechain/truffle-v5@2.0.2",
+      "bom-ref": "npm/@typechain/truffle-v5@2.0.2"
+    },
+    {
+      "type": "library",
+      "name": "@typechain/web3-v1",
+      "version": "1.0.0",
+      "purl": "pkg:npm/@typechain/web3-v1@1.0.0",
+      "bom-ref": "npm/@typechain/web3-v1@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@types/chai",
+      "version": "4.2.11",
+      "purl": "pkg:npm/@types/chai@4.2.11",
+      "bom-ref": "npm/@types/chai@4.2.11"
+    },
+    {
+      "type": "library",
+      "name": "@types/lowdb",
+      "version": "1.0.9",
+      "purl": "pkg:npm/@types/lowdb@1.0.9",
+      "bom-ref": "npm/@types/lowdb@1.0.9"
+    },
+    {
+      "type": "library",
+      "name": "@types/mocha",
+      "version": "7.0.2",
+      "purl": "pkg:npm/@types/mocha@7.0.2",
+      "bom-ref": "npm/@types/mocha@7.0.2"
+    },
+    {
+      "type": "library",
+      "name": "@types/node",
+      "version": "14.0.5",
+      "purl": "pkg:npm/@types/node@14.0.5",
+      "bom-ref": "npm/@types/node@14.0.5"
+    },
+    {
+      "type": "library",
+      "name": "bignumber.js",
+      "version": "9.0.0",
+      "purl": "pkg:npm/bignumber.js@9.0.0",
+      "bom-ref": "npm/bignumber.js@9.0.0"
+    },
+    {
+      "type": "library",
+      "name": "buidler-typechain",
+      "version": "0.1.1",
+      "purl": "pkg:npm/buidler-typechain@0.1.1",
+      "bom-ref": "npm/buidler-typechain@0.1.1"
+    },
+    {
+      "type": "library",
+      "name": "chai",
+      "version": "4.2.0",
+      "purl": "pkg:npm/chai@4.2.0",
+      "bom-ref": "npm/chai@4.2.0"
+    },
+    {
+      "type": "library",
+      "name": "chai-bignumber",
+      "version": "3.0.0",
+      "purl": "pkg:npm/chai-bignumber@3.0.0",
+      "bom-ref": "npm/chai-bignumber@3.0.0"
+    },
+    {
+      "type": "library",
+      "name": "chai-bn",
+      "version": "^0.2.1",
+      "purl": "pkg:npm/chai-bn@^0.2.1",
+      "bom-ref": "npm/chai-bn@^0.2.1"
+    },
+    {
+      "type": "library",
+      "name": "defender-relay-client",
+      "version": "^1.7.0",
+      "purl": "pkg:npm/defender-relay-client@^1.7.0",
+      "bom-ref": "npm/defender-relay-client@^1.7.0"
+    },
+    {
+      "type": "library",
+      "name": "dotenv",
+      "version": "^8.2.0",
+      "purl": "pkg:npm/dotenv@^8.2.0",
+      "bom-ref": "npm/dotenv@^8.2.0"
+    },
+    {
+      "type": "library",
+      "name": "eth-sig-util",
+      "version": "2.5.3",
+      "purl": "pkg:npm/eth-sig-util@2.5.3",
+      "bom-ref": "npm/eth-sig-util@2.5.3"
+    },
+    {
+      "type": "library",
+      "name": "ethereum-waffle",
+      "version": "3.0.2",
+      "purl": "pkg:npm/ethereum-waffle@3.0.2",
+      "bom-ref": "npm/ethereum-waffle@3.0.2"
+    },
+    {
+      "type": "library",
+      "name": "ethereumjs-util",
+      "version": "7.0.2",
+      "purl": "pkg:npm/ethereumjs-util@7.0.2",
+      "bom-ref": "npm/ethereumjs-util@7.0.2"
+    },
+    {
+      "type": "library",
+      "name": "ethers",
+      "version": "^5.0.19",
+      "purl": "pkg:npm/ethers@^5.0.19",
+      "bom-ref": "npm/ethers@^5.0.19"
+    },
+    {
+      "type": "library",
+      "name": "globby",
+      "version": "^11.0.1",
+      "purl": "pkg:npm/globby@^11.0.1",
+      "bom-ref": "npm/globby@^11.0.1"
+    },
+    {
+      "type": "library",
+      "name": "hardhat",
+      "version": "^2.2.0",
+      "purl": "pkg:npm/hardhat@^2.2.0",
+      "bom-ref": "npm/hardhat@^2.2.0"
+    },
+    {
+      "type": "library",
+      "name": "hardhat-gas-reporter",
+      "version": "^1.0.0",
+      "purl": "pkg:npm/hardhat-gas-reporter@^1.0.0",
+      "bom-ref": "npm/hardhat-gas-reporter@^1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "hardhat-typechain",
+      "version": "^0.3.3",
+      "purl": "pkg:npm/hardhat-typechain@^0.3.3",
+      "bom-ref": "npm/hardhat-typechain@^0.3.3"
+    },
+    {
+      "type": "library",
+      "name": "husky",
+      "version": "^4.2.5",
+      "purl": "pkg:npm/husky@^4.2.5",
+      "bom-ref": "npm/husky@^4.2.5"
+    },
+    {
+      "type": "library",
+      "name": "lowdb",
+      "version": "1.0.0",
+      "purl": "pkg:npm/lowdb@1.0.0",
+      "bom-ref": "npm/lowdb@1.0.0"
+    },
+    {
+      "type": "library",
+      "name": "prettier",
+      "version": "^2.0.5",
+      "purl": "pkg:npm/prettier@^2.0.5",
+      "bom-ref": "npm/prettier@^2.0.5"
+    },
+    {
+      "type": "library",
+      "name": "prettier-plugin-solidity",
+      "version": "^1.0.0-alpha.53",
+      "purl": "pkg:npm/prettier-plugin-solidity@^1.0.0-alpha.53",
+      "bom-ref": "npm/prettier-plugin-solidity@^1.0.0-alpha.53"
+    },
+    {
+      "type": "library",
+      "name": "pretty-quick",
+      "version": "^2.0.1",
+      "purl": "pkg:npm/pretty-quick@^2.0.1",
+      "bom-ref": "npm/pretty-quick@^2.0.1"
+    },
+    {
+      "type": "library",
+      "name": "solidity-coverage",
+      "version": "^0.7.16",
+      "purl": "pkg:npm/solidity-coverage@^0.7.16",
+      "bom-ref": "npm/solidity-coverage@^0.7.16"
+    },
+    {
+      "type": "library",
+      "name": "temp-hardhat-etherscan",
+      "version": "^2.0.2",
+      "purl": "pkg:npm/temp-hardhat-etherscan@^2.0.2",
+      "bom-ref": "npm/temp-hardhat-etherscan@^2.0.2"
+    },
+    {
+      "type": "library",
+      "name": "ts-generator",
+      "version": "^0.1.1",
+      "purl": "pkg:npm/ts-generator@^0.1.1",
+      "bom-ref": "npm/ts-generator@^0.1.1"
+    },
+    {
+      "type": "library",
+      "name": "ts-node",
+      "version": "^8.10.2",
+      "purl": "pkg:npm/ts-node@^8.10.2",
+      "bom-ref": "npm/ts-node@^8.10.2"
+    },
+    {
+      "type": "library",
+      "name": "tslint",
+      "version": "^6.1.2",
+      "purl": "pkg:npm/tslint@^6.1.2",
+      "bom-ref": "npm/tslint@^6.1.2"
+    },
+    {
+      "type": "library",
+      "name": "tslint-config-prettier",
+      "version": "^1.18.0",
+      "purl": "pkg:npm/tslint-config-prettier@^1.18.0",
+      "bom-ref": "npm/tslint-config-prettier@^1.18.0"
+    },
+    {
+      "type": "library",
+      "name": "tslint-plugin-prettier",
+      "version": "^2.3.0",
+      "purl": "pkg:npm/tslint-plugin-prettier@^2.3.0",
+      "bom-ref": "npm/tslint-plugin-prettier@^2.3.0"
+    },
+    {
+      "type": "library",
+      "name": "typechain",
+      "version": "^4.0.0",
+      "purl": "pkg:npm/typechain@^4.0.0",
+      "bom-ref": "npm/typechain@^4.0.0"
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "^4.0.5",
+      "purl": "pkg:npm/typescript@^4.0.5",
+      "bom-ref": "npm/typescript@^4.0.5"
+    }
+  ]
+}

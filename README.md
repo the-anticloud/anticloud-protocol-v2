@@ -1,211 +1,61 @@
-# PROTOCOL V2
+# PROTOCOL_V2
 
-![license](https://img.shields.io/badge/license-license-blue) ![offline-first](https://img.shields.io/badge/offline--first-air--gap-green) ![audit](https://img.shields.io/badge/audit-SHA3--256-orange) ![category](https://img.shields.io/badge/category-cryptocurrency-lightgrey)
-
-> Anticloud-hardened packaging of the upstream project `PROTOCOL_V2` in category **CRYPTOCURRENCY**. No upstream snapshot is present on disk for this project; the pinned commit below was resolved during the second documentation pass, and the 12-improvement overlay lives in `anticloud/`. Every fact in this file traces to a file on disk in this project directory.
-
-**Category:** CRYPTOCURRENCY · **Upstream:** https://github.com/aave/protocol-v2 · **Upstream pin:** `1821f61b5a3305f516ba63e2ecc153aa4990e100` · **Vendor:** Anticloud FZ LLE
-
----
+> Anticloud offline package — upstream: aave/protocol-v2 @ `master`.
 
 ## What This Project Does
 
-**PROTOCOL V2** — Aave Protocol V2 - decentralized lending and borrowing smart contracts (Solidity).
+Aave Protocol V2
 
-The project is vendored into the Anticloud project at a pinned upstream commit and hardened with the standard 12-improvement overlay (see the Benchmarks section).
+## Upstream README
 
-Project-specific facts detected in this directory:
-
-- Ecosystem: **Unknown (no standard manifest detected)** (manifests: none detected; scanned in project root)
-- Upstream snapshot: none on disk for this project; only the Anticloud packaging directories are present
-- Snapshot size: **340 files**, **35216 lines of code** (measured; see Benchmarks)
-- Primary languages: `.ts` (162), `.sol` (124), `.json` (25), `(none)` (7), `.pdf` (7), `.yml` (4)
-- Upstream commit pinned for this packaging: `1821f61b5a3305f516ba63e2ecc153aa4990e100`
-
----
-
-## Installation
-
-No installation section was found in the upstream readme, so the commands below are generated from the manifests detected in this project directory.
-
-```sh
-# No upstream snapshot on disk; consult the upstream project (see the
-# Upstream section) for build and install instructions.
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Build pass](https://github.com/AAVE/protocol-v2/actions/workflows/node.js.yml/badge.svg)](https://github.com/aave/protocol-v2/actions/workflows/node.js.yml)
+```
+        .///.                .///.     //.            .//  `/////////////-
+       `++:++`              .++:++`    :++`          `++:  `++:......---.`
+      `/+: -+/`            `++- :+/`    /+/         `/+/   `++.
+      /+/   :+/            /+:   /+/    `/+/        /+/`   `++.
+  -::/++::`  /+:       -::/++::` `/+:    `++:      :++`    `++/:::::::::.
+  -:+++::-`  `/+:      --++/---`  `++-    .++-    -++.     `++/:::::::::.
+   -++.       .++-      -++`       .++.    .++.  .++-      `++.
+  .++-         -++.    .++.         -++.    -++``++-       `++.
+ `++:           :++`  .++-           :++`    :+//+:        `++:----------`
+ -/:             :/-  -/:             :/.     ://:         `/////////////-
 ```
 
-Overlay install (this project):
+# Aave Protocol v2
 
-```sh
-python -m pip install -e anticloud/     # overlay package with the 12 improvements
-python anticloud/cli.py --help          # 13 subcommands, JSON stdout
-```
+This repository contains the smart contracts source code and markets configuration for Aave Protocol V2. The repository uses Docker Compose and Hardhat as development enviroment for compilation, testing and deployment tasks.
 
----
+## What is Aave?
 
-## Usage
+Aave is a decentralized non-custodial liquidity markets protocol where users can participate as depositors or borrowers. Depositors provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralized (perpetually) or undercollateralized (one-block liquidity) fashion.
 
-No usage section was found in the upstream readme. Entry points detected in this project directory:
+## Documentation
 
-Browse the snapshot layout listed under What This Project Does and follow the upstream run instructions for the detected ecosystem (Unknown (no standard manifest detected)).
+The documentation of Aave V2 is in the following [Aave V2 documentation](https://docs.aave.com/developers/v/2.0/) link. At the documentation you can learn more about the protocol, see the contract interfaces, integration guides and audits.
 
-Anticloud overlay CLI (available in every project):
+For getting the latest contracts addresses, please check the [Deployed contracts](https://docs.aave.com/developers/v/2.0/deployed-contracts/deployed-contracts) page at the documentation to stay up to date.
 
-```sh
-python anticloud/cli.py --help     # 13 subcommands, JSON stdout
-python anticloud/cli.py checks     # run the 16-check suite
-```
+A more detailed and technical description of the protocol can be found in this repository, [here](./aave-v2-whitepaper.pdf)
 
----
+## Audits
 
-## API
+- MixBytes (16/09/2020 - 03/12/2020): [report](./audits/Mixbytes-aave-v2-03-12-2020.pdf)
+- PeckShield (29/09/2020 - 03/12/2020) : [report](./audits/Peckshield-aave-v2-03-12-2020-EN.pdf) (Also available in Chinese in the same folder)
+- CertiK (28/09/2020 - 02/12/2020): [report](./audits/Certik-aave-v2-03-12-2020.pdf)
+- Consensys Diligence (09/09/2020 - 09/10/2020): [report](https://consensys.net/diligence/audits/2020/09/aave-protocol-v2/)
+- Certora, formal verification (02/08/2020 - 29/10/2020): [report](./audits/Certora-FV-aave-v2-03-12-2020.pdf)
+- SigmaPrime (January 2021): [report](./audits/SigmaPrime-aave-v2-01-2021.pdf)
 
-The upstream API surface is defined by the `PROTOCOL_V2` upstream project (Unknown (no standard manifest detected) ecosystem); no source snapshot is vendored for this project. Entry points recorded for this packaging:
+## Connect with the community
 
-- Source modules: `01_INVESTOR_PACKAGE/`, `10_TECHNICAL_HANDOFF/`, `25_MILLENNIUM_PROBLEM_PROPOSALS/`, `28_TECHNICAL_WHITEPAPER/`, `29_INVESTOR_MEMO/`, `30_LOI/`, `UPSTREAM/`
-- The snapshot declares 49 dependency references across 1 ecosystem(s); see Dependencies below.
-- Overlay API: `anticloud/cli.py` exposes 13 subcommands with JSON stdout; `anticloud/bench/runner.py` runs the 16-check suite; `anticloud/provenance/chain.py` exposes the SHA3-256 + Ed25519 provenance chain.
-
----
-
-## Dependencies
-
-| Metric | Value |
-|--------|-------|
-| Ecosystem | Unknown (no standard manifest detected) |
-| Manifests detected | none |
-| Files in snapshot | 340 |
-| Lines of code | 35216 |
-| Dependency references | 49 |
-| Dependencies by ecosystem | npm: 49 |
-| Upstream license | AGPL-3.0 |
-| Overlay license | Anticommons 0.1.0 |
-
-Top dependency references recorded in the benchmark snapshot:
-
-| Ecosystem | Name | Version | Source file |
-|-----------|------|---------|-------------|
-| npm | axios-curlirize | ^1.3.7 | package.json |
-| npm | tmp-promise | ^3.0.2 | package.json |
-| npm | @nomiclabs/buidler | ^1.4.7 | package.json |
-| npm | @nomiclabs/buidler-ethers | 2.0.0 | package.json |
-| npm | @nomiclabs/buidler-etherscan | ^2.1.0 | package.json |
-| npm | @nomiclabs/buidler-waffle | 2.0.0 | package.json |
-| npm | @nomiclabs/hardhat-ethers | ^2.0.0 | package.json |
-| npm | @nomiclabs/hardhat-etherscan | ^3.1.4 | package.json |
-| npm | @nomiclabs/hardhat-waffle | ^2.0.0 | package.json |
-| npm | @openzeppelin/contracts | 3.1.0 | package.json |
-| npm | @tenderly/hardhat-tenderly | 1.1.0-beta.5 | package.json |
-| npm | @typechain/ethers-v4 | 1.0.0 | package.json |
-| npm | @typechain/ethers-v5 | ^2.0.0 | package.json |
-| npm | @typechain/truffle-v4 | 2.0.2 | package.json |
-| npm | @typechain/truffle-v5 | 2.0.2 | package.json |
-| ... | (34 more) | | |
-
-Pinned lockfile: `anticloud/requirements.lock` (hash-pinned, PEP 508). SBOM: `sbom.cdx.json` (CycloneDX 1.5, pinned to the upstream SHA).
-
----
-
-## Configuration
-
-No configuration section was found in the upstream readme. Configuration-relevant files detected in this project directory:
-
-- None detected at the snapshot root; consult the upstream documentation link in the Upstream section.
-
-Overlay configuration (Anticloud):
-
-- `anticloud/` - improvement overlay; environment-driven, no cloud dependency
-- `LEDGERS/` - aioss tamper-evident chain files (per-project, verified with `aioss verify --live`)
-- `ISOLATED_LAB_RESULTS/` - reproducibility record (environment, reproduction steps, result register, evidence)
-- `OFFICIAL_BENCHMARKS/` - 26 framework assessments for this project
-
----
-
-## Contributing
-
-Upstream contributions: fork the `PROTOCOL_V2` project, create a feature branch, and open a pull request against upstream. Keep `UPSTREAM_CLONE/` untouched in this packaging; put improvements in the `anticloud/` overlay.
-
-Overlay contributions: run the 16-check suite before opening a pull request:
-
-```sh
-python anticloud/bench/runner.py --cwd anticloud
-```
-
----
+You can join at the [Discord](http://aave.com/discord) channel or at the [Governance Forum](https://governance.aave.com/) for asking questions about the protoco
 
 ## License
 
-**Upstream license: AGPL-3.0** (evidence: `LICENSE.md` in the upstream snapshot).
+Upstream terms preserved in `THIRD_PARTY_LICENSES/`. Overlay licensed under Anticommons 0.1.0.
 
-### Anticommons 0.1.0 overlay
+## Verification
 
-The Anticloud integration overlay in `anticloud/` - improvements 1 through 12 listed under Benchmarks - is licensed under **Anticommons 0.1.0**. Upstream code remains under its original AGPL-3.0 terms. See `ANTICOMMONS_LICENSE.md` in this directory for the overlay terms and contact.
-
-SPDX: `AGPL-3.0` (upstream) + Anticommons 0.1.0 (overlay, dual).
-
----
-
-## Upstream
-
-- **Project:** `PROTOCOL_V2` (category: CRYPTOCURRENCY)
-- **Upstream URL:** https://github.com/aave/protocol-v2
-- **Pinned commit (SHA):** `1821f61b5a3305f516ba63e2ecc153aa4990e100`
-- **Branch:** master
-- **Pin provenance:** resolved during the second documentation pass. The parent-project stamp is explicitly rejected for this project.
-- **Snapshot location:** none on disk for this project
-- **Benchmark snapshot:** `BENCH.json`
-
----
-
-## Benchmarks
-
-Measured by the Anticloud assurance suite. Every value below is read from this
-project's `BENCH.json`, produced by a real run — the SHA3-256 of that file is
-`eb24a05668c1eca4c131288edb47b0a3e1a602ff97e3dd45a8be636f87b733b4`.
-
-| Framework | Controls | Evidence | Coverage | Result |
-|---|---|---|---|---|
-| OWASP Top 10 for LLM Applications | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| OWASP Top 10 (2021) | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| SOC 2 Type II readiness | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| NIST AI Risk Management Framework | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| NIST SP 800-53 Rev. 5 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| NIST Cybersecurity Framework 2.0 | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| FedRAMP Rev. 5 | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| PCI DSS v4.0.1 | 11 controls mapped | 11 with evidence | 100.0% | PASS |
-| ISO/IEC 27001:2022 | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| MITRE ATT&CK v16 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| ML Technology Readiness Level | TRL 8 | 8/8 criteria | | PASS |
-
-**Overall: 16/16 checks passing.**
-
-See `ISOLATED_LAB_RESULTS/03_Result_Register.md` for the 16-check register with pass condition, command and observed value per check.
-
-Framework folders in `OFFICIAL_BENCHMARKS/` state the control set and the
-evidence source bound to each control. This project does not claim an audit
-opinion, a SOC report, a FedRAMP authorisation or a PCI attestation — those are
-issued by an independent assessor.
-
-
-
-## Archives and Permanent Records
-
-| Platform | Identifier | Volume |
-|---|---|---|
-| Harvard Dataverse | DOI 10.7910/DVN/YMJKOG | 145 citable datasets |
-| AIOSS verification kit | DOI 10.7910/DVN/OORKNJ | Offline hash verification |
-| Zenodo (CERN) | — | 146 records, DOI-registered |
-| OSF | — | 144 preregistered records |
-| Figshare | author 20849885 | Research data and figures |
-| Internet Archive | aioss-format, Anticode | Permanent binary specification |
-| ORCID | 0009-0009-2233-6107 | Permanent researcher ID |
-| Kaggle | pax-millennium-20 | Reproducible T4 benchmark run |
-
-
-
-## Press and Independent Publication
-
-The PAX benchmark release was distributed by Newsfile wire to 336 outlets
-(312 Web, 23 Terminal, 1 Application), including Yahoo Finance, The Globe and Mail, Business Insider, National Post, Financial Post, StreetInsider, Digital Journal, Barchart, International Business Times, and fox47 · National Law Review.
-Wire distribution makes the announcement dated, public, and indexed, which
-makes the claim checkable.
-
+Recompute the SHA3-256 of `BENCH.json` and compare to this package’s register. Any drift = invalid package.
